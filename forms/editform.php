@@ -1,5 +1,5 @@
 <?php
-    include_once("../dbConnection/mysqlconfig_connection.php");
+    include_once("../dbConnections/mysqlconfig_conn.php");
     $id = $_GET['id'];
     $result = mysqli_query($dbc, "SELECT * FROM tblsubject WHERE Subject_ID=$id"); 
     while($res = mysqli_fetch_array($result)) {
